@@ -260,3 +260,134 @@ border: 0;
 /* ------------------- */
 /* Components          */
 /* ------------------- */
+
+.primary-header{
+  align-items: center;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+} 
+
+
+
+
+
+.logo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5vw;
+    height: 4rem;
+    width: 5rem;
+}
+
+.primary-navigation{
+  padding-left: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation a{
+  text-decoration: none;
+  padding: 0 1rem;
+  position: relative;
+}
+
+
+.link::before{
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: white;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before{
+  content: '';
+}
+
+.link::before {
+  transform-origin: 50% 100%;
+  transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+  clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.link:hover::before {
+  transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+  clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+.link span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+}
+
+.link:hover span {
+  transform: translate3d(0, -2px, 0);
+}
+
+.x {
+ gap: 5rem;
+}
+
+@media  (max-width: 45rem){
+  .primary-navigation {
+    background-color: black;
+      flex-direction: column;
+      position: fixed;
+      inset: 0 0 0 40%;
+      z-index: 1000;
+      --underline-gap:5rem;
+      --gap:5rem;
+      list-style: none;
+      padding: min(20rem , 15vh) 2rem;
+      margin: 0;
+      transform: translateX(100%);
+      transition: transform 750ms ease-in-out;
+      justify-content: center;
+  }
+
+  .primary-navigation[data-visible="true"]{
+      transform: translateX(0);
+  }
+
+  .primary-navigation.underline-indicators .active{
+      border: 0;
+
+  }
+
+  .mobile-nav-toggle {
+      display: block;
+      position: absolute;
+      z-index: 2000;
+      top: 2rem;
+      right: 2rem;
+      background-color: transparent;
+      border: none;
+      background-image: url(./assets/picture/bars-solid.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 2rem;
+      aspect-ratio: 1;
+
+  }
+
+  .primary-navigation a {
+    font-size: 1.45rem;
+  }
+
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"]{
+    background-image: url(./assets/picture/xmark-solid.svg) ;
+    transition: transform ease-in 0.7s;
+}
+
+.mobile-nav-toggle[aria-expanded="true"]:hover{
+  transform: rotate(180deg);
+}
