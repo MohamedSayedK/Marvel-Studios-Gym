@@ -135,6 +135,7 @@ select {
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
+  justify-content: var(--justify-content, flex-start);
 }
 
 
@@ -213,15 +214,16 @@ border: 0;
 }
 
 .txt-dark{
-  color: hsl(var(--clr-dark) );
+  color:var(--clr-dark);
 }
 
+
 .txt-light{
-  color: hsl(var(--clr-light) );
+  color:var(--clr-light);
 }
 
 .txt-accent{
-  color: hsl(var(--clr-accent) );
+  color:var(--clr-accent);
 }
 
 
@@ -266,22 +268,18 @@ border: 0;
   background-color: black;
   position: relative;
   overflow: hidden;
+  --justify-content: space-between;
 } 
 
 
-
-
-
 .logo{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     margin-left: 5vw;
     height: 4rem;
-    width: 5rem;
+    width: 4rem;
 }
 
 .primary-navigation{
-  padding-left: 2rem;
+  margin-right: 4rem;
   text-decoration: none;
   list-style: none;
 }
@@ -365,11 +363,11 @@ border: 0;
       display: block;
       position: absolute;
       z-index: 2000;
-      top: 2rem;
-      right: 2rem;
+      top: 1rem;
+      right: 1rem;
       background-color: transparent;
       border: none;
-      background-image: url(./assets/picture/bars-solid.svg);
+      background-image: url(./assets/images/bars-solid.svg);
       background-position: center center;
       background-repeat: no-repeat;
       width: 2rem;
@@ -384,7 +382,7 @@ border: 0;
   }
 
   .mobile-nav-toggle[aria-expanded="true"]{
-    background-image: url(./assets/picture/xmark-solid.svg) ;
+    background-image: url(./assets/images/xmark-solid.svg) ;
     transition: transform ease-in 0.7s;
 }
 

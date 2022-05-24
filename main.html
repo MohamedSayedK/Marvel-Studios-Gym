@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&family=Ubuntu&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="navigation.js"></script>
-    <title>Document</title>
+    <title>Marvel Gym</title>
+    <script src="navigation.js" defer></script>
+
 </head>
 <body>
     <header class="primary-header flex">
         <div>
-            <a href="index.html">            <img src="./assets/picture/gamerslounge.png" alt="Gamers lounge logo" class="logo"></a>
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Marvel Gym Logo" class="logo">
+            </a>
           </div>
           <button class="mobile-nav-toggle" data-visible="false" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
           <nav>
-              <ul id="primary-navigation" data-visible="false" class=" primary-navigation flex">
-                  <li class="active"><a class="" href="#"><span>About</span></a>
-                  <li><a class="" href="#"><span>Services</span></a>
-                  <li><a class="" href="#"><span>Memberships</span></a>
-                <li><a class="" href="#"><span>Contact</span></a>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                  <li class="active"><a class="uppercase txt-light ff-ubuntu-cond fs-300 link" href="#"><span>About</span></a>
+                  <li><a class="uppercase txt-light ff-ubuntu-cond fs-300 link" href="#"><span>Services</span></a>
+                  <li><a class="uppercase txt-light ff-ubuntu-cond fs-300 link" href="#"><span>Memberships</span></a>
+                <li><a class="uppercase txt-light ff-ubuntu-cond fs-300 link" href="#"><span>Contact</span></a>
               </ul>
           </nav>
     </header>
