@@ -542,10 +542,27 @@ border: 0;
 
 
 .services{
-  background-color: rgb(80, 80, 80);
-  padding: 7rem;
+  background-color: rgb(62, 62, 62);
+  padding: 5rem;
+  width: 100%;
+  color: white;
 }
 
+.services-main{
+  --flex-direction:row;
+}
+
+.services-list{
+  --flex-direction:column;
+  margin-inline: 3rem;
+  margin-top: 3rem;
+}
+
+.services-list a{
+  text-decoration: none;
+  border-top: 1px solid gray;
+  color: white;
+}
 
 
 
