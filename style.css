@@ -165,31 +165,6 @@ select {
   max-width: var(--max-width,80rem);
 }
 
-.content-block{
-  --flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  padding-inline: 6rem;
-  --max-width:60%;
-  background-color: white;
-  margin-top: -3rem;
-  z-index: 2;
-}
-
-.content-block-2{
-  --flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  --gap:1rem;
-  --max-width:60%;
-  background-color: white;
-  margin-top: -3rem;
-  z-index: 2;
-  padding-top: 3rem;
-}
-
-
 
 .sr-only {                                      /* This is for screen readers */
 position: absolute;
@@ -288,6 +263,7 @@ border: 0;
 .fs-600 {
   line-height: 1.1;
 }
+
 
 
 /* ------------------- */
@@ -423,13 +399,6 @@ border: 0;
   transform: rotate(180deg);
 }
 
-/* wrapper */
-.wrapper{
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
 
 /* Hero Section */
 
@@ -464,6 +433,29 @@ border: 0;
   background-color: rgb(235, 235, 235);
   position: relative;
   --flex-direction:column;
+}
+.content-block{
+  --flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  padding-inline: 6rem;
+  width: 60vw;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+}
+
+.content-block-2{
+  --flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --gap:1rem;
+  width: 60%;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+  padding-top: 3rem;
 }
 
 
@@ -554,6 +546,11 @@ border: 0;
   transition: 0.7s;
   display: inline-block;
   font-size: 1em;
+}
+
+.fitness-info-pic{
+  height:100%; 
+  width:100%;
 }
 
 .info-link:hover span{
@@ -691,6 +688,98 @@ padding: 1rem;
   color: hsl(0, 0%, 47%);
 }
 
+/*page specific*/
 
 
+@media  (max-width: 55rem){
+
+  .content-block{
+    width: 80%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+  }
+  
+  .content-block-2{
+    width: 80%;
+    padding-inline: 0;
+    transition: 0.5s ease-in;
+
+  }
+ } 
+
+
+
+@media  (max-width: 45rem){
+
+  .content-block{
+    width: 80%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+  }
+  
+  .content-block-2{
+    width: 80%;
+    padding-inline: 0;
+    transition: 0.5s ease-in;
+
+  }
+
+  .services{
+    padding: 3rem 2rem;
+  }
+ } 
+
+
+
+@media (max-width:35rem){
+
+  .content-block{
+    width: 100%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+  }
+  
+  .content-block-2{
+    width: 100%;
+    padding-inline: 0;
+    transition: 0.5s ease-in;
+    
+  }
+  .fitness-info,
+  .coaching-info{
+    padding: 0.2em;
+  }
+
+  .services{
+    padding: 3rem 1rem;
+  }
+
+}
+
+
+
+
+/* .content-block{
+  --flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  padding-inline: 6rem;
+  width: 60vw;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+}
+
+.content-block-2{
+  --flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --gap:1rem;
+  width: 60%;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+  padding-top: 3rem;
+} */
 
