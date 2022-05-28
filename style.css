@@ -450,16 +450,6 @@ border: 0;
   z-index: 2;
 }
 
-.content-block-contact{
-  --flex-direction: column;
-  padding: 3rem;
-  padding-inline: 6rem;
-  width: 60%;
-  background-color: white;
-  margin-top: -3rem;
-  z-index: 2;
-}
-
 .content-block-2{
   --flex-direction: column;
   justify-content: center;
@@ -470,6 +460,16 @@ border: 0;
   margin-top: -3rem;
   z-index: 2;
   padding-top: 3rem;
+}
+
+.content-block-contact{
+  --flex-direction: column;
+  padding: 3rem;
+  padding-inline: 6rem;
+  width: 60%;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
 }
 
 
@@ -775,6 +775,12 @@ height: 50vh;
     transition: 0.5s ease-in;
 
   }
+
+  .content-block-contact{
+    width: 80%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+}
  } 
 
 
@@ -793,6 +799,12 @@ height: 50vh;
     transition: 0.5s ease-in;
 
   }
+
+  .content-block-contact{
+    width: 80%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+}
 
   .services{
     padding: 3rem 2rem;
@@ -815,6 +827,12 @@ height: 50vh;
     transition: 0.5s ease-in;
     
   }
+
+  .content-block-contact{
+    width: 100%;
+    padding-inline: 2rem;
+    transition: 0.5s ease-in;
+}
   .fitness-info,
   .coaching-info{
     padding: 0.2em;
