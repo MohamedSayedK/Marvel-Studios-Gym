@@ -27,6 +27,10 @@ a{
   text-decoration: none;
 }
 
+h1{
+  font-weight: 300;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -462,7 +466,7 @@ border: 0;
   padding-top: 3rem;
 }
 
-.content-block-contact{
+.content-block-misc{
   --flex-direction: column;
   padding: 3rem;
   padding-inline: 6rem;
@@ -776,14 +780,12 @@ height: 50vh;
 
   }
 
-  .content-block-contact{
+  .content-block-misc{
     width: 80%;
     padding-inline: 2rem;
     transition: 0.5s ease-in;
 }
  } 
-
-
 
 @media  (max-width: 45rem){
 
@@ -800,7 +802,7 @@ height: 50vh;
 
   }
 
-  .content-block-contact{
+  .content-block-misc{
     width: 80%;
     padding-inline: 2rem;
     transition: 0.5s ease-in;
@@ -828,7 +830,7 @@ height: 50vh;
     
   }
 
-  .content-block-contact{
+  .content-block-misc{
     width: 100%;
     padding-inline: 2rem;
     transition: 0.5s ease-in;
@@ -842,6 +844,22 @@ height: 50vh;
     padding: 3rem 1rem;
   }
 
+}
+
+ /*About Us*/
+ .about-intro{
+  --gap: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.content-block-misc video{
+  height: 30rem;
+}
+
+.coaches{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 1rem;
 }
 
 
