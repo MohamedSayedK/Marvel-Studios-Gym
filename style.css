@@ -23,6 +23,10 @@ dd {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -155,7 +159,7 @@ select {
 }
 
 .container {
-  padding-inline: 2em;
+  padding-inline: 2rem;
   margin-inline: auto;
   max-width: var(--max-width,80rem);
 }
@@ -289,7 +293,7 @@ border: 0;
 
 .primary-navigation{
   margin-right: 4rem;
-  text-decoration: none;
+    
   list-style: none;
 }
 
@@ -298,7 +302,7 @@ border: 0;
 }
 
 .primary-navigation a{
-  text-decoration: none;
+    
   padding: 0 1rem;
   position: relative;
 }
@@ -440,7 +444,17 @@ border: 0;
   align-items: center;
   padding: 3rem;
   padding-inline: 6rem;
-  width: 60vw;
+  width: 60%;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+}
+
+.content-block-contact{
+  --flex-direction: column;
+  padding: 3rem;
+  padding-inline: 6rem;
+  width: 60%;
   background-color: white;
   margin-top: -3rem;
   z-index: 2;
@@ -471,9 +485,6 @@ border: 0;
   text-align: center;
 }
 
-.content-block-link{
-  text-decoration: none;
-}
 
 .content-block-2 h3{
   max-width: 70%
@@ -497,9 +508,6 @@ border: 0;
   font-weight: 300;
 }
 
-.transform a{
-  text-decoration: none;
-}
 
 .container-2 h1{
   font-weight: 300;
@@ -536,7 +544,7 @@ border: 0;
 
 .fitness-info a,
 .coaching-info a{
-  text-decoration: none;
+    
   font-size: 13px;
 }
 
@@ -589,7 +597,6 @@ border: 0;
 }
 
 .services-list a{
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.548);
 }
 
@@ -623,8 +630,17 @@ border: 0;
   padding: 3rem;
 }
 
+.contact-are-you-in{
+  --flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 3rem;
+}
+
 .are-you-in-cta{
-  text-decoration: none;
   padding: 1rem 3rem;
   border: 1px solid hsl(37, 41%, 54%);
   transition: 0.6s ease-in;
@@ -637,7 +653,6 @@ border: 0;
 }
 
 .contact-in{
-  text-decoration: none;
   color: gray;
   transition: 0.6s ease-in;
 }
@@ -660,6 +675,18 @@ border: 0;
   height: 50vh;
 }
 
+.misc-footer{
+  --flex-direction:column;
+  background-color: rgb(51, 51, 51);
+  margin-top: -1rem;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
 .footer-link{
   --flex-direction:row;
   justify-content: flex-start;
@@ -667,7 +694,6 @@ border: 0;
 }
 
 .footer-link a{
-  text-decoration: none;
   color: hsl(0, 0%, 47%);
 }
 
@@ -686,6 +712,50 @@ padding: 1rem;
 
 .footer p{
   color: hsl(0, 0%, 47%);
+}
+
+.misc-footer p{
+  color: hsl(0, 0%, 47%);
+}
+
+/*Contact*/
+
+.img-tops{
+height: 50vh;
+}
+
+.contact-main{
+  --flex-direction:row;
+  --gap:5rem; 
+}
+
+.contact-intro{
+  --gap: 0.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.contact-intro h1{
+  font-weight: 300;
+}
+
+.contact-main{
+  padding: 4rem 0;
+  border-top: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);;
+}
+
+.contact-info h3{
+  padding-bottom: 1rem;
+}
+
+
+.contact-question{
+  background-color: rgb(233, 233, 233);
+  padding: 1.5rem;;
+}
+
+.contact-question a{
+  display: inline;
 }
 
 /*page specific*/
