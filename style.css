@@ -417,7 +417,7 @@ border: 0;
   padding-inline: 2rem;
   padding-bottom: 3rem;
   background-color: hsl(0, 0%, 0%);
-  background-image: url(./assets/images/hero-back.png);
+  background-image: url(./assets/images/hero-back.webp);
   background-position: center center;
   background-size: cover;
   --gap:0.5rem;
@@ -434,6 +434,7 @@ border: 0;
   max-width: 65ch;
   text-align: center;
 }
+
 
 /*content blocks*/
 
@@ -466,6 +467,7 @@ border: 0;
   padding-top: 3rem;
 }
 
+
 .content-block-misc{
   --flex-direction: column;
   padding: 3rem;
@@ -497,7 +499,7 @@ border: 0;
 /*transform Section*/
 
 .transform{
-  background-image: url(./assets/images/test-1.png);
+  background-image: url(./assets/images/transform.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -612,7 +614,7 @@ border: 0;
 /*Dare*/
 
 .dare{
-  background-image: url(./assets/images/dare.png);
+  background-image: url(./assets/images/dare.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
