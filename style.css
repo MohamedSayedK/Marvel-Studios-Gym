@@ -455,6 +455,16 @@ border: 0;
   z-index: 2;
 }
 
+.content-block-contact{
+  --flex-direction: column;
+  padding: 3rem;
+  padding-inline: 6rem;
+  width: 60%;
+  background-color: white;
+  margin-top: -3rem;
+  z-index: 2;
+}
+
 .content-block-2{
   --flex-direction: column;
   justify-content: center;
